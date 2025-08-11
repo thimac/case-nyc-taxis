@@ -52,7 +52,7 @@ Caso esteja utilizando a versão Community do Databricks (que não suporta `dbut
 
 ## 📊 Análise dos Dados
 
-Com os dados devidamente tratados pelo processo de ETL, eles estão prontos para serem explorados.
+Com os dados disponibilizados para consuma em uma tabela externa, eles estão prontos para serem explorados.
 
 ### 1. Análise via Notebook
 *   O notebook `analise_consumo.ipynb` contém as respostas para as questões do teste, bem como outras análises exploratórias. Nele, você encontrará os principais insights gerados a partir dos dados processados.
@@ -61,7 +61,7 @@ Com os dados devidamente tratados pelo processo de ETL, eles estão prontos para
 
     Durante a análise, foram identificados alguns pontos que merecem atenção e um aprofundamento futuro para garantir a total acuracidade dos resultados:
 
-    *   **Tratamento de Nulos:** A única transformação de limpeza aplicada neste estágio foi a substituição de valores nulos da coluna `passenger_count` pela **mediana** da respectiva coluna, uma abordagem inicial para permitir a análise.
+    *   **Tratamento de Nulos:** A única transformação de limpeza aplicada durante a transformação  foi a substituição de valores nulos da coluna `passenger_count` pela **mediana** da respectiva coluna.
     *   **Distribuição de Datas:** Foi observado que a distribuição de meses nos dados parece ser maior do que o range de dados que foi ingerido, o que pode indicar um problema na fonte.
     *   **Valores Inconsistentes:**
         *   A coluna `total_amount` apresenta valores negativos, o que é atípico para uma cobrança de corrida e precisa ser investigado.
