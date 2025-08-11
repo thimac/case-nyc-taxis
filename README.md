@@ -66,6 +66,7 @@ Com os dados disponibilizados para consuma em uma tabela externa, eles estão pr
     *   **Valores Inconsistentes:**
         *   A coluna `total_amount` apresenta valores negativos, o que é atípico para uma cobrança de corrida e precisa ser investigado.
         *   A coluna `passenger_count` contém valores muito acima da capacidade de um táxi convencional (ex: mais de 6 passageiros), sugerindo erros de digitação ou de sistema.
+    *   **Engenharia de Features:** Para análises mais detalhadas, seria benéfico criar novas colunas a partir das existentes. Por exemplo, extrair a data e a hora separadamente da coluna `pickup_datetime` pode facilitar análises de sazonalidade diária ou semanal. A única coluna criada neste projeto foi `mes_pickup`, com o propósito específico de particionar a tabela final para otimizar as consultas.
 
 
 ### 2. Consulta via Tabela Externa (SQL)
