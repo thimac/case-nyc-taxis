@@ -3,7 +3,7 @@ Projeto de ingestão e ETL com dados públicos sobre táxis de Nova York (NYC Ta
 
 ## Sobre o projeto
 
-Este projeto realiza a ingestão de dados brutos, seguida por um processo de ETL (Extração, Transformação e Carga) para limpar, transformar e preparar os dados para análise. O desenvolvimento foi feito utilizando o ambiente Databricks.
+Este projeto realiza a ingestão de dados brutos, seguida por um processo de coleta e ingestão de dados para Consumo em um Data Lake. Adicionalmente, foram feitas algumas análises e tranformações. O desenvolvimento foi feito utilizando o ambiente Databricks.
 
 ## 🛠️ Pré-requisitos
 
